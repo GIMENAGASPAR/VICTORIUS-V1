@@ -6,6 +6,7 @@ import './App.css'
 import { Login } from './pages/Login'
 import { Dashboard } from './pages/Dashboard'
 import { BrowserRouter, Route } from 'react-router-dom'
+import { PrivateRoutes, PublicRoutes } from './models/router'
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Login/>} />
       <Route path="*" element={<>NOT FOUND</>}/>
-      <Route path="/dasboard" element={<Dashboard/>} />
+      <Route path={PublicRoutes.LOGIN} element={<Login/>} />
+      <Route path={PrivateRoutes.DASHBOARD} element={<Dashboard/>} />
     </Routes>
       <Login/>
       <Dashboard/>
