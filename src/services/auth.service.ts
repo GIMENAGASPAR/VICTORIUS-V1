@@ -1,4 +1,4 @@
-const baseUrl = "https://rickanmortyapi.com/api/";
+const baseUrl = "https://rickandmortyapi.com/api/";
 const characterUrl= baseUrl+"character/";
 
 export const getMorty=()=>{
