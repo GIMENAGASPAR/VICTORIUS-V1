@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { UserKey, createUser, resetUser } from "../../redux/states/user";
 import { getMorty } from "../../services"
 import { useDispatch} from "react-redux";
-import { PrivateRoutes, PublicRoutes, Roles } from "../../models";
+import { InvitedRoutes, PrivateRoutes, Roles } from "../../models";
 import { useEffect } from "react";
 import { clearLocalStorage } from "../../utilities/localStorage.utilities";
 
@@ -13,14 +13,14 @@ function Login() {
   useEffect(() => {
     clearLocalStorage(UserKey);
     dispatch(resetUser());
-    navigate(`/${PublicRoutes.LOGIN}`, { replace: true });
+    navigate(`/${InvitedRoutes.HOME}`, { replace: true });
   }, []);
 
   const login = async()=>{
     try{
       const result = await getMorty();
-      dispatch(createUser({ ...result, rol: Roles.USER }));
-      navigate(`/${PrivateRoutes.PRIVATE}`, { replace: true });
+      dispatch(createUser({ ...result, rol: Roles.USER}));
+      navigate(`/${PrivateRoutes.USER}`, { replace: true });
     }catch(error){}
   };
 
@@ -32,4 +32,4 @@ function Login() {
   )
 }
 
-export default Login
+export default Login;

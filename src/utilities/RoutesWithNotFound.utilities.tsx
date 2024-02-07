@@ -8,7 +8,7 @@ function RoutesWithNotFound({children}:Props) {
   return (
     <Routes>
         {children}
-        <Route path="*" element={<>NOT FOUND</>}/>
+        <Route path="*" element={<div>NOT FOUND</div>}/>
     </Routes>
   )
 }

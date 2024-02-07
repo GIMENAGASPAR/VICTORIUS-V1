@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { UserKey, resetUser } from "../../redux/states/user";
 import { clearLocalStorage } from "../../utilities/localStorage.utilities";
-import { PublicRoutes } from "../../models/router";
+import { InvitedRoutes } from "../../models/router";
 
 function Logout() {
     const navigate = useNavigate();
@@ -11,7 +11,7 @@ function Logout() {
     const logOut=()=>{
         clearLocalStorage(UserKey);
         dispatch(resetUser());
-        navigate(PublicRoutes.LOGIN, { replace: true });
+        navigate(InvitedRoutes.HOME, { replace: true });
     }
   return (
     <button onClick={logOut}>Log Out</button>

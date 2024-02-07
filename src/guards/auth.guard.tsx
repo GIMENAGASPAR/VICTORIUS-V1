@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux"
 import { Navigate, Outlet } from "react-router-dom";
 import { AppStore } from "../redux/store"
-import { PrivateRoutes, PublicRoutes } from "../models/router";
+import { InvitedRoutes, PrivateRoutes} from "../models/router";
 
 interface Props {
     privateValidation: boolean;
@@ -19,7 +19,7 @@ export const Authguard = ({ privateValidation }: Props) =>{
           PublicValidationFragment
         )
       ) : (
-        <Navigate replace to={PublicRoutes.LOGIN} />
+        <Navigate replace to={InvitedRoutes.LOGIN} />
       );
 }
 export default Authguard;

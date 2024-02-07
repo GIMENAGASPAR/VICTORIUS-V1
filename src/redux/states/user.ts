@@ -3,10 +3,10 @@ import { UserInfo } from "../../models";
 import { persistLocalStorage, clearLocalStorage} from "../../utilities/localStorage.utilities";
 
 export const EmptyUserState:UserInfo={
-    id: 0,
-    name: "",
-    email: ""
-}
+  id: 0,
+  name: "",
+  email: ""
+};
 
 export const UserKey = 'user';
 

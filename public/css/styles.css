@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+}
+
+/*HEADER*/
+.navbar{
+    background-color: #ef81a9;
+    padding: 0px !important;
+}
+.nav-item{
+    font-size: 24px;
+}
+
+/*SECCION PUBLICIDAD*/
+.publicidad{
+    height: 200px;
+    background-color: antiquewhite;
+}
+
+/*CATEGORIAS*/
+.categorias-padre{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+.row{
+    align-items: center;
+}
+.categorias-hijo{
+    background-color: #F8AEC5;
+}
+
+
+@media (min-width: 575px)  {
+    /*HEADER*/
+    .navbar-collapse{
+        display: flex;
+        justify-content: flex-end;
+    }
+    /*CATEGORIAS*/
+    .categorias-padre{
+        flex-direction: row;
+    }
+}
