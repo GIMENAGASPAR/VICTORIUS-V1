@@ -1,0 +1,19 @@
+*{
+    font-family: 'Protest Strike', sans-serif;
+}
+
+/*HEADER*/
+.navbar{
+    background-color: #ef81a9;
+    padding: 0px !important;
+}
+.nav-item{
+    font-size: 24px;
+}
+@media (min-width: 575px){
+    /*HEADER*/
+    .navbar-collapse{
+        display: flex;
+        justify-content: flex-end;
+    }
+}

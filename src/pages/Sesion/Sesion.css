@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+}
+.body-session{
+    background-image: linear-gradient(180deg, #e8e8e8 10%, #ff7696 90%);
+    padding: 20px;
+}
+/*SESION*/
+.sesion-bloque{
+    width: 80%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin: 60px 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    font-size: 28px;
+}
+.form-father{
+    margin: 20px 10px;
+}
+.type-form{
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+    padding-left: 7px;
+}
+.input-form{
+    font-size: 16px;
+    color: #333;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    height: 55px;
+    background: 0 0;
+    padding: 0 7px 0 43px;
+    border: none;
+}
+.buttons-form{
+    margin: 12px 0px;
+}
+.password-form{
+    font-size: 11px;
+    color: rgb(235, 51, 103);
+    text-align: center;
+    margin: 14px;
+}
+.button-login{
+    text-align: center;
+    border: solid 4px;
+    border-radius: 18px;
+    font-size: 25px;
+    padding: 5px 55px;
+    text-decoration: none;
+    color: black;
+}
+.button-registate{
+    font-size: 20px;
+    text-decoration: underline wavy;
+    color: #ff1e52;
+    text-align: center;
+    padding: 0px 55px;
+}
+
+.acount-form{
+    font-size: 16px;
+    color: rgb(102 161 98);
+    text-align: center;
+    margin: 22px 0px 5px 0px;
+}
+@media (min-width: 575px)  {
+    
+    /*FORMULARIO INICIO SESION*/
+    .sesion-bloque{
+        width: 50%;
+        margin: 60px 220px;
+    }
+}
+@media (min-width: 900px){
+    /*FORMULARIO INICIO SESION*/
+    .sesion-bloque{
+        width: 32%;
+        margin: 60px 500px
+    }
+}

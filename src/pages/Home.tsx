@@ -1,6 +1,7 @@
-import { Head } from '../../partials';
-import { Header } from '../../partials';
-function HomeInvited() {
+import './Home.css'
+import { Head } from './partials';
+import { Header } from './partials';
+function Home() {
   return (
     <>
     <Head></Head>
@@ -14,4 +15,4 @@ function HomeInvited() {
     </>
   )
 }
-export default HomeInvited;
+export default Home;

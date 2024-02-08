@@ -3,7 +3,8 @@ export const PublicRoutes = {
 }
 export const InvitedRoutes={
     HOME: "Home",
-    LOGIN: "Login"
+    LOGIN: "Login",
+    REGISTER: "Register"
 }
 
 export const PrivateRoutes ={

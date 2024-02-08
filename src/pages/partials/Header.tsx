@@ -1,11 +1,17 @@
+import './Header.css'
+
+import { Home } from ".."
+import { Login, Register } from "../Sesion"
+
+
 function Header() {
   return (
     <>
     <header>
         <nav className="navbar navbar-expand-sm header-block">
             <div className="container-fluid">
-                <a className="navbar-brand" href="index.ejs">
-                    <img src="../../../public/images/LOGO.PNG" alt="LOGO" style={{ width: 80 }} />
+                <a className="navbar-brand" href="/" onClick={Home}>
+                    <img src="/images/LOGO.PNG" alt="LOGO" style={{ width: 80 }} />
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span className="navbar-toggler-icon" />
@@ -17,8 +23,8 @@ function Header() {
                                 <i className="fa-regular fa-circle-user" style={{ color: "#000000", fontSize: 29 }}/>
                             </a>
                             <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="#">iniciar sesion</a></li>
-                                <li><a className="dropdown-item" href="#">registrarse</a></li>
+                                <li><a className="dropdown-item" href='/Login' onClick={Login}>iniciar sesion</a></li>
+                                <li><a className="dropdown-item" href="/Register" onClick={Register}>registrarse</a></li>
                             </ul>
                         </li>
                         <li className="nav-item">
